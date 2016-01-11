@@ -1,0 +1,85 @@
+/* HEADER */
+
+.header {
+	background-image: url('../img/burger01.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 965px;
+	background-attachment: fixed;
+}
+.sloganhead {
+	font-size: 900%;
+	line-height: 100px;
+	color: white;
+	padding-top: 22.5%;
+}
+
+.weTake {
+	font-family: 'weTake';
+}
+.sloganBurger {
+	font-family: 'burgerSlogan';
+}
+.banner {
+	font-size: 30px;
+	font-family: weTake;
+	background-image: url('../img/banner.png');
+	background-size: cover;
+	background-position: center;
+	width: 1000px;
+	line-height: normal;
+	background-repeat: no-repeat;
+	letter-spacing: 1px;
+	color: black;
+}
+@media (max-width: 800px) { /* TRIED TO SORT OUT XS AND SM DEVICES, WILL LOOK AT LATER.  FEEL FREE TO HAVE A LOOK AT IT FOR YOURSELF */
+	.sloganhead {
+		font-size: 550%;
+		line-height: 70px;
+		padding-top: 50%; 
+	}
+	.header {
+		height: 100%;
+
+	}
+}
+
+/* END HEADER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FONTS */
+
+
+@font-face {
+    font-family: weTake;
+    src: url('../Fonts/Everglow.otf');
+}
+@font-face {
+    font-family: burgerSlogan;
+    src: url('../Fonts/distress.otf');
+}
+
+/* END FONTS*/
