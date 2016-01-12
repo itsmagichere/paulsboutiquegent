@@ -5,21 +5,26 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 965px;
-	background-attachment: fixed;
+	min-height: 970px;
 }
 .sloganhead {
 	font-size: 900%;
-	line-height: 100px;
+	line-height: 95px;
 	color: white;
-	padding-top: 22.5%;
+	padding-top: 300px;
 }
 
 .weTake {
 	font-family: 'weTake';
+	line-height: 110px;
+	font-size: 90%;
+}
+.seriously {
+	font-size: 83%;
 }
 .sloganBurger {
 	font-family: 'burgerSlogan';
+	line-height: 100px;
 }
 .banner {
 	font-size: 30px;
@@ -30,10 +35,24 @@
 	width: 1000px;
 	line-height: normal;
 	background-repeat: no-repeat;
-	letter-spacing: 1px;
 	color: black;
 }
-@media (max-width: 800px) { /* TRIED TO SORT OUT XS AND SM DEVICES, WILL LOOK AT LATER.  FEEL FREE TO HAVE A LOOK AT IT FOR YOURSELF */
+
+
+@media (max-width: 992px) { 
+	.sloganhead {
+		padding-top: -50px ;
+	}
+
+}
+
+@media (max-width: 768px) { 
+	.sloganhead {
+		padding-left: 15%;
+	}
+
+}
+/*@media (max-width: 800px) {  TRIED TO SORT OUT XS AND SM DEVICES, WILL LOOK AT LATER.  FEEL FREE TO HAVE A LOOK AT IT FOR YOURSELF 
 	.sloganhead {
 		font-size: 550%;
 		line-height: 70px;
@@ -43,19 +62,54 @@
 		height: 100%;
 
 	}
-}
+}*/
 
 /* END HEADER */
 
+.menu {
+	background-color: #337ab7;
+}
+.menuhead {
+	text-align: center;
+	font-size: 600%;
+	font-family: burgerSlogan;
+	padding-top: 2vh;
+}
+
+.menusubhead {
+	font-size: 350%;
+	text-align: center;
+	font-family: avenBlack;
+}
+
+.menucontent {
+	padding: 50px 0 50px;
+	text-align: center;
+	font-size: 150%;
+	font-family: avenBlack;
+}
+
+
+.menubutton {
+	background-image: url('../img/assets/PNGs/button.png');
+	
+
+}
 
 
 
 
-
-
-
-
-
+@media (max-width: 782px) {
+	.menuhead {
+		font-size: 300%;
+	}
+	.menusubhead {
+		font-size: 150%;
+	}
+	.menucontent {
+		font-size: 125%;
+	}
+}
 
 
 
@@ -75,11 +129,19 @@
 
 @font-face {
     font-family: weTake;
-    src: url('../Fonts/Everglow.otf');
+    src: url('../fonts/Everglow.otf');
 }
 @font-face {
     font-family: burgerSlogan;
-    src: url('../Fonts/distress.otf');
+    src: url('../fonts/distress.otf');
+}
+@font-face {
+    font-family: avenBlack;
+    src: url('../fonts/avenir/AvenirLTStd-Black.otf');
+}
+@font-face {
+    font-family: avenBlackOblique;
+    src: url('../fonts/avenir/AvenirLTStd-BlackOblique.otf');
 }
 
 /* END FONTS*/
