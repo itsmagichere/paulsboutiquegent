@@ -1,4 +1,4 @@
-/* HEADER */
+ /*HEADER */
 
 .header {
 	background-image: url('../img/burger01.jpg');
@@ -12,6 +12,7 @@
 	line-height: 95px;
 	color: white;
 	padding-top: 300px;
+	float: right;
 }
 
 .weTake {
@@ -27,15 +28,17 @@
 	line-height: 100px;
 }
 .banner {
-	font-size: 30px;
-	font-family: weTake;
-	background-image: url('../img/banner.png');
-	background-size: cover;
-	background-position: center;
-	width: 1000px;
-	line-height: normal;
+	background-image: url('../img/assets/PNGs/banner.png');
+	text-align: center;
 	background-repeat: no-repeat;
-	color: black;
+	background-position: center;
+	padding: 70px 0 100px 0;
+	background-size: 60%;
+	font-size: 1.5em;
+	float: right;
+	margin-right: 7.5%;
+	margin-top: -2%;
+	color: #EEE;
 }
 
 
@@ -66,23 +69,25 @@
 
 /* END HEADER */
 
+/* MENU */
+
 .menu {
 	background-color: #337ab7;
 }
-.menuhead {
+.sectionhead {
 	text-align: center;
 	font-size: 600%;
 	font-family: burgerSlogan;
 	padding-top: 2vh;
 }
 
-.menusubhead {
+.sectionsubhead {
 	font-size: 350%;
 	text-align: center;
 	font-family: avenBlack;
 }
 
-.menucontent {
+.sectioncontent {
 	padding: 50px 0 50px;
 	text-align: center;
 	font-size: 150%;
@@ -90,39 +95,112 @@
 }
 
 
-.menubutton {
+.sectionbutton {
 	background-image: url('../img/assets/PNGs/button.png');
-	
-
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 60px 0 60px 0;
+	background-size: 90%;
+	font-size: 300%;
+	color: #EEE;
 }
 
 
 
 
 @media (max-width: 782px) {
-	.menuhead {
+	.sectionhead {
 		font-size: 300%;
 	}
-	.menusubhead {
+	.sectionsubhead {
 		font-size: 150%;
 	}
-	.menucontent {
+	.banner {
+		font-size: 100%;
+	}
+	.sectioncontent {
 		font-size: 125%;
+	}
+	.sectionbutton {
+		font-size: 90%;
+	}
+}
+@media (max-width: 992px) {
+	.sectionhead {
+		font-size: 300%;
+	}
+	.sectionsubhead {
+		font-size: 150%;
+	}
+	.banner {
+		font-size: 100%;
+	}
+	.sectioncontent {
+		font-size: 125%;
+	}
+	.sectionbutton {
+		font-size: 200%;
+	}
+}
+@media (max-width: 700px) {
+	.header {
+		background-size: cover;
+		min-height: 600px;
+	}
+	.sloganhead {
+		font-size: 600%;
+		margin-top: -70%;
+		left: -50%;
+	}
+	.banner {
+		font-size: 100%;
+	}
+	.sectionhead {
+		font-size: 300%;
+	}
+	.sectionsubhead {
+		font-size: 150%;
+	}
+	.sectioncontent {
+		font-size: 125%;
+	}
+	.sectionbutton {
+		font-size: 100%;
+		margin-top: -50px;
+		background-size: 120%;
 	}
 }
 
 
+/* END MENU */
 
 
 
+/* MAKE YOUR OWN */
 
+.makeyourown {
+	background-color: #D41F3E;
+}
 
+/* END MYO */
 
+/* EVENTS */
 
+.events {
+	background-color: #DE9129;
+}
 
+/* END EVENTS */
 
+/* CONTACT */
 
+.contact {
+	background-color: #3B3B3B;
+	color: white;
+}
 
+/* END CONTACT */
 
 /* FONTS */
 
@@ -144,4 +222,4 @@
     src: url('../fonts/avenir/AvenirLTStd-BlackOblique.otf');
 }
 
-/* END FONTS*/
+/* END FONTS
