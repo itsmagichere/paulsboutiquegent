@@ -1,9 +1,20 @@
- /*HEADER */
+/* MISC */
+
+.container {
+	z-index: 100 !important;
+}
+
+/* END MISC */
+
+/*HEADER */
+
+
 
 .header {
 	background-image: url('../img/burger01.jpg');
 	background-size: cover;
 	background-position: center;
+    background-attachment: local;
 	background-repeat: no-repeat;
 	min-height: 970px;
 }
@@ -34,64 +45,41 @@
 	background-position: center;
 	padding: 70px 0 100px 0;
 	background-size: 60%;
-	font-size: 1.5em;
+	font-size: 200%;
 	float: right;
 	margin-right: 7.5%;
-	margin-top: -2%;
-	color: #EEE;
+    padding-top: 5%;
+	color: white;
+    font-family: burgerSlogan;
 }
 
 
-@media (max-width: 992px) { 
-	.sloganhead {
-		padding-top: -50px ;
-	}
 
-}
-
-@media (max-width: 768px) { 
-	.sloganhead {
-		padding-left: 15%;
-	}
-
-}
-/*@media (max-width: 800px) {  TRIED TO SORT OUT XS AND SM DEVICES, WILL LOOK AT LATER.  FEEL FREE TO HAVE A LOOK AT IT FOR YOURSELF 
-	.sloganhead {
-		font-size: 550%;
-		line-height: 70px;
-		padding-top: 50%; 
-	}
-	.header {
-		height: 100%;
-
-	}
-}*/
 
 /* END HEADER */
 
 /* MENU */
 
-.menu {
-	background-color: #337ab7;
-}
 .sectionhead {
 	text-align: center;
 	font-size: 600%;
 	font-family: burgerSlogan;
-	padding-top: 2vh;
+	padding-top: 3vh;
+	z-index: 5;
 }
 
 .sectionsubhead {
 	font-size: 350%;
 	text-align: center;
-	font-family: avenBlack;
+	font-family: sectionSubHead;
 }
 
 .sectioncontent {
+    
 	padding: 50px 0 50px;
 	text-align: center;
 	font-size: 150%;
-	font-family: avenBlack;
+	font-family: sectionContent;
 }
 
 
@@ -104,12 +92,131 @@
 	background-size: 90%;
 	font-size: 300%;
 	color: #EEE;
+    font-family: sectionButton;
 }
 
 
 
 
+
+
+/* END MENU */
+
+
+.menu {
+	background: linear-gradient(to bottom, rgb(51, 122,183), rgb(51, 122, 183)), url('img/rough-beige-texture.jpg');
+	padding: 20px 0 20px;
+	position: relative;
+}
+
+#basilpic {
+	position: absolute;
+	padding-top: 25%;
+}
+
+#eggpic {
+	position: absolute;
+	top: -10px;
+	right: 0px;
+	float: right;
+	
+}
+
+#tomatopic {
+	position: absolute;
+	right: 0px;
+	top: -100px;
+	overflow: hidden;
+	height: 50%;
+
+}
+#tomatopicTwo {
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+	overflow: hidden;
+	height: 30%;
+
+}
+
+#limespic {
+	position: absolute;
+	bottom: 0;
+}
+
+#wasabipic {
+	position: absolute;
+	top: 45%;
+	right: 20%;
+}
+
+#basilEvents {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#mustardEvents {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+
+}
+/* MAKE YOUR OWN */
+
+.makeyourown {
+	background-color: #D41F3E;
+	padding: 20px 0 20px;
+	position: relative;
+}
+
+.makeyourown .sectionbutton {
+	left: 25%;
+}
+
+.myoimages img {
+	padding: 10px 45px 10px 45px;
+}
+
+/* END MYO */
+
+/* EVENTS */
+
+.events {
+	background-color: #DE9129;
+	position: relative;
+	padding: 20px 0 20px;
+}
+.events .sectionbutton {
+	left: 25%;
+}
+
+
+/* END EVENTS */
+
+/* CONTACT */
+
+.contact {
+	background-color: #3B3B3B;
+	position: relative;
+	padding: 20px 0;
+	color: white;
+}
+.contact .sectionbutton {
+	left: 25%;
+}
+
+
+/* END CONTACT */
+
+
+/* MEDIA */
+
 @media (max-width: 782px) {
+    .sloganhead {
+		padding-left: 25%;
+	}
+
 	.sectionhead {
 		font-size: 300%;
 	}
@@ -127,6 +234,9 @@
 	}
 }
 @media (max-width: 992px) {
+	.sloganhead {
+		padding-top: -50px ;
+	}    
 	.sectionhead {
 		font-size: 300%;
 	}
@@ -144,17 +254,22 @@
 	}
 }
 @media (max-width: 700px) {
+    p {
+        margin-left: 10px;
+        margin-right:10px;
+    }
 	.header {
 		background-size: cover;
 		min-height: 600px;
 	}
 	.sloganhead {
 		font-size: 600%;
-		margin-top: -70%;
-		left: -50%;
+        margin-top: -45%;
 	}
 	.banner {
 		font-size: 100%;
+        background-size: contain;
+        float: none;
 	}
 	.sectionhead {
 		font-size: 300%;
@@ -170,37 +285,54 @@
 		margin-top: -50px;
 		background-size: 120%;
 	}
+    
+    #limespic {
+        height: 30%;
+        top: 10%;
+        
+    }
+    #wasabipic {
+        top: 50%;
+        right: 5%;
+        height: 30%;
+        
+    }
+    
+    #mustardEvents {
+        height: 20%;
+    }
+    #basilEvents {
+        position: absolute;
+        top: 0px;
+    }
+    
+    #basilpic {
+        height: 40%;
+        bottom: 0;
+    }
+    
+    #tomatopic {
+        height: 15%;
+        top: 0px;
+    }
+    
+    #tomatopicTwo {
+        height: 40%;
+    }
+    
+    .myoimages {
+        text-align: center
+    }
+    .myoimages img {
+        height: 150px;
+    }
 }
 
 
-/* END MENU */
+@media (max-width: 768px) { 
 
-
-
-/* MAKE YOUR OWN */
-
-.makeyourown {
-	background-color: #D41F3E;
 }
 
-/* END MYO */
-
-/* EVENTS */
-
-.events {
-	background-color: #DE9129;
-}
-
-/* END EVENTS */
-
-/* CONTACT */
-
-.contact {
-	background-color: #3B3B3B;
-	color: white;
-}
-
-/* END CONTACT */
 
 /* FONTS */
 
@@ -221,5 +353,18 @@
     font-family: avenBlackOblique;
     src: url('../fonts/avenir/AvenirLTStd-BlackOblique.otf');
 }
+@font-face {
+    font-family: sectionContent;
+    src: url('../fonts/avenir/AvenirLTStd-Book.otf');
+}
+@font-face {
+    font-family: sectionSubHead;
+    src: url('../fonts/avenir/AvenirLTStd-Medium.otf');
+}
+@font-face {
+    font-family: sectionButton;
+    src: url('../fonts/distress.otf');
+}
+
 
 /* END FONTS
