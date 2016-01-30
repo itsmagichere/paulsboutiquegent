@@ -76,7 +76,7 @@
 }
 
 .sectioncontent {
-    
+
 	padding: 50px 0 50px;
 	text-align: center;
 	font-size: 150%;
@@ -127,7 +127,7 @@
 	top: -10px;
 	right: 0px;
 	float: right;
-	
+
 }
 
 #tomatopic {
@@ -225,7 +225,88 @@
 /* END CONTACT */
 
 
+/* MENU PAGE */
 
+.menu-body {
+	background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.9)), url('../img/rough-beige-paper-texture.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.menu-padding {
+	padding-bottom: 100px;
+}
+
+.menu-header {
+	background-image: url('../img/ingredients01.jpg');
+    background-size: cover;
+    height: 650px;
+    background-repeat: no-repeat;
+}
+.menu-head {
+	color: #FFF;
+	text-align: center;
+	font-family: 'burgerSlogan';
+	font-size: 700%;
+	padding: 40px 0 20px;
+}
+
+
+.burgers {
+	color: #EEE;
+	font-size: 150%;
+}
+.burgers li {
+	list-style: none;
+}
+
+.burgers h1 {
+	font-family: 'burgerSlogan';
+	font-size: 300%;
+	margin-left: 7.5%;
+}
+
+#currency {
+	float: right;
+}
+
+/* ORDER */
+
+.order {
+	background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.9)), url('../img/rough-beige-paper-texture.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.jouwSmaak {
+	color: #FDA940;
+	font-size: 300%;
+	font-family: 'burgerSlogan';
+}
+
+.orderSub {
+	color: #EEE;
+}
+
+.orderFood {
+	height: 100px;
+	display: inline;
+}
+
+.order li {
+	list-style: circle;
+	color: #EEE;
+	font-size: 150%;
+}
+.foodOrder li {
+  list-style: circle;
+}
+.selected {
+  list-style: disc !important;
+}
+
+/* END ORDER */
 
 /* MEDIA */
 @media (max-width: 800px) {
@@ -261,7 +342,7 @@
 @media (max-width: 992px) {
 	.sloganhead {
 		padding-top: -50px ;
-	}    
+	}
 	.sectionhead {
 		font-size: 300%;
 	}
@@ -313,19 +394,19 @@
 		margin-top: -50px;
 		background-size: 120%;
 	}
-    
+
     #limespic {
         height: 30%;
         top: 10%;
-        
+
     }
     #wasabipic {
         top: 50%;
         right: 5%;
         height: 30%;
-        
+
     }
-    
+
     #mustardEvents {
         height: 20%;
     }
@@ -333,21 +414,21 @@
         position: absolute;
         top: 0px;
     }
-    
+
     #basilpic {
         height: 40%;
         bottom: 0;
     }
-    
+
     #tomatopic {
         height: 15%;
         top: 0px;
     }
-    
+
     #tomatopicTwo {
         height: 20%;
     }
-    
+
     .myoimages {
         text-align: center
     }
@@ -388,9 +469,7 @@
     .sloganhead {
         left: 0;
     }
-    .banner {
-        font-size: 
-    }
+
 }
 
 /* END MEDIA */
