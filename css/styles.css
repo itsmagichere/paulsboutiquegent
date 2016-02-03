@@ -281,12 +281,16 @@
 
 .jouwSmaak {
 	color: #FDA940;
-	font-size: 300%;
+	font-size: 400%;
+	padding: 40px 0;
 	font-family: 'burgerSlogan';
 }
 
 .orderSub {
 	color: #EEE;
+	font-size: 400%;
+	font-family: 'burgerSlogan';
+	padding: 0 0 30px;
 }
 
 .orderFood {
@@ -305,6 +309,63 @@
 .selected {
   list-style: disc !important;
 }
+.order .sectionbutton {
+	left: 25%;
+	background-size: 60%;
+	color: #89BF41;
+	font-size: 450%;
+}
+
+/* BUNS */
+
+.buns {
+	padding: 20px 0 50px;
+}
+
+.bunRadio {
+	cursor: pointer;
+}
+
+.buns img {
+	max-height: 17.5%;
+}
+
+/* END BUNS */
+
+/* MEAT */
+.meat {
+	padding: 20px 0 50px;
+}
+
+.meat img {
+	max-height: 17.5%;
+}
+
+/* END MEAT*/
+
+/* CHEESE */
+
+.cheese {
+	padding: 20px 0 50px;
+}
+
+.cheese img {
+	max-height: 17.5%;
+}
+
+/* END CHEESE */
+
+/* EXTRAS */
+
+.extras {
+	padding: 20px 0 100px;
+}
+
+.extras img {
+	max-height: 17.5%;
+}
+
+/* END EXTRAS */
 
 /* END ORDER */
 

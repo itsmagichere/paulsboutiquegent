@@ -21,9 +21,14 @@ $(document).ready(function() {
      $(this).attr('src','img/assets/PNGs/salad.png');
 });
 
-    $('.foodOrder').click(function() {
-        $(this).find("li").toggleClass('selected');
-    });
+
+// ORDER
+
+
+    $('.bunRadio').click(function() {
+      $(this).toggleClass('selected');
+    })
+
 
 
 
