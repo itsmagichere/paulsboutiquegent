@@ -1,10 +1,31 @@
-/* MISC */
+/* NAVIGATION */
 
-.container {
-	z-index: 100 !important;
+
+
+.navigation ul li {
+	display: inline-block;
+	padding-right: 4%;
+	padding: 7.5px 2% 0;
+	margin-left: 10%;
 }
 
-/* END MISC */
+
+.opening-times {
+	font-size: 125%;
+	background-color: rgb(31, 39, 45);
+	color: rgb(109, 120, 125);
+	padding: 5px 0 5px;
+	text-align: center;
+}
+
+.spacer {
+	padding: 0 40px 0 40px;
+}
+
+/* END NAVIGATION */
+
+
+
 
 /*HEADER */
 
@@ -40,18 +61,8 @@
 	line-height: 100px;
 }
 .banner {
-	background-image: url('../img/assets/PNGs/banner.png');
-	text-align: center;
-	background-repeat: no-repeat;
-	background-position: center;
-	padding: 70px 0 100px 0;
-	background-size: 60%;
-	font-size: 200%;
 	float: right;
-	margin-right: 7.5%;
-    padding-top: 5%;
-	color: white;
-    font-family: burgerSlogan;
+
 }
 
 
@@ -63,14 +74,14 @@
 
 .sectionhead {
 	text-align: center;
-	font-size: 600%;
+	font-size: 500%;
 	font-family: burgerSlogan;
 	padding-top: 3vh;
 	z-index: 5;
 }
 
 .sectionsubhead {
-	font-size: 350%;
+	font-size: 300%;
 	text-align: center;
 	font-family: sectionSubHead;
 }
@@ -101,7 +112,7 @@
 
 
 
-/* END MENU */
+/* MENU */
 
 
 .menu {
@@ -114,8 +125,14 @@
 }
 
 .menu .sectionsubhead {
-    color: white;
+	color: rgb(218, 191, 69);
+	font-family: avenBlack;
 }
+.menu .sectionbutton {
+	color: rgb(218, 191, 69);
+	font-family: 'burgerSlogan';
+}
+
 
 #basilpic {
 	position: absolute;
@@ -183,6 +200,15 @@
 .makeyourown .sectionbutton {
 	left: 25%;
 }
+.makeyourown .sectionsubhead {
+	color: rgb(33, 192, 255);
+	font-family: avenBlack;
+}
+.makeyourown .sectionbutton {
+	color: rgb(33, 192, 255);
+	font-family: 'burgerSlogan';
+}
+
 
 .myoimages img {
 	padding: 10px 45px 10px 45px;
@@ -202,6 +228,15 @@
 .events .sectionbutton {
 	left: 25%;
 }
+.events .sectionhead {
+	color: rgb(236, 0, 72);
+	font-family: 'burgerSlogan';
+}
+.events .sectionbutton {
+	color: rgb(236, 0, 72);
+	font-family: 'burgerSlogan';
+}
+
 
 
 /* END EVENTS */
@@ -221,6 +256,14 @@
 	left: 25%;
 }
 
+.contact .sectionhead {
+	color: rgb(136, 193, 54);
+	font-family: 'burgerSlogan';
+}
+.contact .sectionbutton {
+	color: rgb(136, 193, 54);
+	font-family: 'burgerSlogan';
+}
 
 /* END CONTACT */
 
@@ -370,28 +413,13 @@
 /* END ORDER */
 
 /* MEDIA */
-@media (max-width: 800px) {
-    .sloganhead {
-        left: -10%;
-    }
-    .banner {
-        padding-top: 11%;
-        color: black;
-    }
-}
 @media (max-width: 782px) {
-    .sloganhead {
-		padding-left: 25%;
-	}
 
 	.sectionhead {
 		font-size: 300%;
 	}
 	.sectionsubhead {
 		font-size: 150%;
-	}
-	.banner {
-		font-size: 100%;
 	}
 	.sectioncontent {
 		font-size: 125%;
@@ -402,16 +430,16 @@
 }
 @media (max-width: 992px) {
 	.sloganhead {
-		padding-top: -50px ;
+		text-align: center;
+	}
+	.banner {
+		text-align: center;
 	}
 	.sectionhead {
 		font-size: 300%;
 	}
 	.sectionsubhead {
 		font-size: 150%;
-	}
-	.banner {
-		font-size: 100%;
 	}
 	.sectioncontent {
 		font-size: 125%;
@@ -421,6 +449,9 @@
 	}
 }
 @media (max-width: 700px) {
+	.sloganhead {
+		padding: 50px 0 50px;
+	}
     p {
         margin-left: 10px;
         margin-right:10px;
@@ -428,18 +459,6 @@
 	.header {
 		background-size: cover;
 		min-height: 600px;
-	}
-	.sloganhead {
-		font-size: 600%;
-        margin-right: 10%;
-        margin-top: -45%;
-	}
-	.banner {
-		font-size: 160%;
-        color: #333;
-        padding-top: 20%;
-        background-size: contain;
-        float: none;
 	}
 	.sectionhead {
 		font-size: 300%;
@@ -497,41 +516,7 @@
         height: 100px;
     }
 }
-@media (max-width: 320px) {
-    .sloganhead {
-        font-size: 500%;
-        margin-top: -80%;
-    }
-    .banner {
-        color: white;
-        padding-top: 26.6%;
-        margin-top: -60px;
-    }
-}
-@media (max-width: 605px) {
-    .sloganhead {
-        left: 12.5%;
-    }
-    .banner {
-        font-size: 280%;
-        padding-top: 14%;
-    }
-}
-@media (max-width: 360px) {
-    .sloganhead {
-        margin-right: 25%;
-    }
-    .banner {
-        font-size: 200%;
-        padding-top: 24%;
-    }
-}
-@media (max-width: 384px) {
-    .sloganhead {
-        left: 0;
-    }
 
-}
 
 /* END MEDIA */
 
@@ -556,10 +541,6 @@
 }
 @font-face {
     font-family: sectionContent;
-    src: url('../fonts/avenir/AvenirLTStd-Book.otf');
-}
-@font-face {
-    font-family: sectionSubHead;
     src: url('../fonts/avenir/AvenirLTStd-Medium.otf');
 }
 @font-face {
