@@ -9,6 +9,7 @@
 
 .navbanner {
   position: relative;
+  background-color:white;
 }
 
 .navbanner:after {
@@ -23,6 +24,9 @@
 	background-repeat: no-repeat;
 
 }
+
+#myNavbar {
+background-color:white;}
 
 .navigation ul li {
 	display: inline-block;
@@ -55,16 +59,14 @@
 
 /*HEADER */
 
-
-
 .header {
 	background-image: url('../img/burger01.jpg');
 	background-size: cover;
 	background-position: center;
     background-attachment: local;
 	background-repeat: no-repeat;
-	min-height: 970px;
-    z-index: 10;
+	min-height: 900px;
+
 }
 .sloganhead {
 	font-size: 900%;
@@ -83,7 +85,7 @@
 	font-size: 83%;
 }
 .sloganBurger {
-	font-family: 'burgerSlogan';
+	font-family: 'titels';
 	line-height: 100px;
 }
 .banner {
@@ -98,73 +100,79 @@
 
 /* MENU */
 
-.sectionhead {
+h1 {
 	text-align: center;
 	font-size: 500%;
-	font-family: burgerSlogan;
-	padding-top: 3vh;
-	z-index: 5;
+	font-family: titels;
+	padding: 1.3vh;
 	color: #FFF;
+	z-index:3;
 }
 
-.sectionsubhead {
-	font-size: 250%;
+h2{
+	font-size: 200%;
 	text-align: center;
-	font-family: sectionSubHead;
-	margin-top: -2%;
+	margin:-2px;
+	font-family: avenBlackOblique;
+	z-index:3;
 }
 
-.sectioncontent {
+p{
 
 	padding: 50px 0 50px;
 	text-align: center;
-	font-size: 150%;
+	color:white;
+	font-size: 125%;
 	font-family: sectionContent;
+	z-index:3;
 }
 
 
 .sectionbutton {
 	background-image: url('../img/assets/PNGs/button.png');
 	text-align: center;
+	font-size: 3.5em;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding: 60px 0 60px 0;
-	background-size: 90%;
-	font-size: 300%;
+	padding: 8vh 0;
 	color: #EEE;
-    font-family: sectionButton;
+	position: relative;
 }
-
-
-
-
-
 
 /* MENU */
 
 
 .menu {
-	background: linear-gradient(to bottom, rgba(51, 122,183,0.75), rgba(51, 122, 183, 0.75)), url('../img/rough-beige-paper-texture.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-	padding: 20px 0 20px;
+background: linear-gradient(to bottom, rgba(27,150,188,0.85), rgba(27,150,188,0.85)), url('../img/rough-beige-paper-texture.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+padding: 20px 0 20px;
+position: relative;
+
+}
+
+.menu a{
+	color: #ffd723;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+.menu a:hover {
+	color: #ffe261;
+	font-family: 'titels';
+}
+
+
+
+.menu p {
 	position: relative;
-    z-index: 9;
 }
-
-.menu .sectionsubhead {
-	color: rgb(218, 191, 69);
-	font-family: avenBlack;
-}
-.menu .sectionbutton {
-	color: rgb(218, 191, 69);
-	font-family: 'burgerSlogan';
-}
-
 
 #basilpic {
 	position: absolute;
 	padding-top: 25%;
+	z-index:2;
+	right: 10%;
 }
 
 #eggpic {
@@ -172,7 +180,73 @@
 	top: -10px;
 	right: 0px;
 	float: right;
+	z-index:2;
+}
 
+#limespic {
+	position: absolute;
+	bottom: 0;
+	z-index:2;
+}
+
+#wasabipic {
+	position: absolute;
+	top: 35%;
+	right: 20%;
+	bottom: 0;
+	z-index:2;
+}
+
+#basilEvents {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index:2;
+}
+
+#mustardEvents {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	z-index:2;
+}
+/* MAKE YOUR OWN */
+
+.makeyourown {
+background: linear-gradient(to bottom, rgba(213, 0, 62, 0.75), rgba(213, 0, 62, 0.75)), url('../img/rough-beige-paper-texture.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+padding: 20px 0 20px;
+position: relative;
+}
+
+.makeyourown .sectionbutton {
+	left: 25%;
+}
+
+.makeyourown a {
+	color: #28c2ff;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+.makeyourown p {
+	position: relative;
+}
+
+.events .sectionbutton {
+	position: relative;
+}
+
+.makeyourown a:hover {
+	color: #58d0ff;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+.myoimages img {
+	padding: 1vh 5vh;
+	margin: 2vh;
 }
 
 #tomatopic {
@@ -180,7 +254,8 @@
 	right: 0px;
 	top: -100px;
 	overflow: hidden;
-	height: 50%;
+	height: 40%;
+	z-index:2;
 
 }
 #tomatopicTwo {
@@ -189,57 +264,7 @@
 	left: 5%;
 	overflow: hidden;
 	height: 30%;
-
-}
-
-#limespic {
-	position: absolute;
-	bottom: 0;
-}
-
-#wasabipic {
-	position: absolute;
-	top: 45%;
-	right: 20%;
-}
-
-#basilEvents {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-
-#mustardEvents {
-	position: absolute;
-	right: 5%;
-	bottom: 5%;
-
-}
-/* MAKE YOUR OWN */
-
-.makeyourown {
-	background: linear-gradient(to bottom, rgba(212, 31, 62, 0.75), rgba(212, 31, 62, 0.75)), url('../img/rough-beige-paper-texture.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-	padding: 20px 0 20px;
-	position: relative;
-}
-
-.makeyourown .sectionbutton {
-	left: 25%;
-}
-.makeyourown .sectionsubhead {
-	color: rgb(33, 192, 255);
-	font-family: avenBlack;
-}
-.makeyourown .sectionbutton {
-	color: rgb(33, 192, 255);
-	font-family: 'burgerSlogan';
-}
-
-
-.myoimages img {
-	padding: 10px 45px 10px 45px;
+	z-index:2;
 }
 
 /* END MYO */
@@ -247,27 +272,28 @@
 /* EVENTS */
 
 .events {
-    background: linear-gradient(to bottom, rgba(222, 145, 41, 0.75), rgba(222, 145, 41, 0.75)), url('../img/rough-beige-paper-texture.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-	position: relative;
-	padding: 20px 0 20px;
+background: linear-gradient(to bottom, rgba(230, 150, 43, 0.85), rgba(230, 150, 43, 0.85)), url('../img/rough-beige-paper-texture.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+padding: 20px 0 20px;
 }
+
 .events .sectionbutton {
 	left: 25%;
+	position: relative;
 }
-.events .sectionhead {
-	color: rgb(236, 0, 72);
-	font-family: 'burgerSlogan';
+
+.events a {
+	color: #ec0048;
+	font-family: 'titels';
+	text-decoration:none;
 }
-.events .sectionsubhead {
-	font-size: 250%;
-	font-family: avenBlack;
-	color: #FFF;
-}
-.events .sectionbutton {
-	color: rgb(236, 0, 72);
-	font-family: 'burgerSlogan';
+
+.events a:hover {
+	color: #ff135b;
+	font-family: 'titels';
+	text-decoration:none;
 }
 
 
@@ -277,7 +303,7 @@
 /* CONTACT */
 
 .contact {
-    background: linear-gradient(to bottom, rgba(59, 59, 59, 0.75), rgba(59, 59, 59, 0.75)), url('../img/rough-beige-paper-texture.jpg');
+    background: linear-gradient(to bottom, rgba(35, 35, 35, 0.85), rgba(35, 35, 35, 0.85)), url('../img/rough-beige-paper-texture.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 	background-color: rgba(59, 59, 59, 0.75);
@@ -289,18 +315,15 @@
 	left: 25%;
 }
 
-.contact .sectionhead {
-	color: rgb(136, 193, 54);
-	font-family: 'burgerSlogan';
+.contact a {
+	color: #88c136;
+	font-family: 'titels';
+	text-decoration:none;
 }
-.events .sectionsubhead {
-	font-size: 250%;
-	font-family: avenBlack;
-	color: #FFF;
-}
-.contact .sectionbutton {
-	color: rgb(136, 193, 54);
-	font-family: 'burgerSlogan';
+
+.contact a:hover{
+	color: #96d53a;
+	font-family: 'titels';
 }
 
 /* END CONTACT */
@@ -324,17 +347,9 @@
     height: 650px;
     background-repeat: no-repeat;
 }
-.menu-head {
-	color: #FFF;
-	text-align: center;
-	font-family: 'burgerSlogan';
-	font-size: 700%;
-	padding: 40px 0 20px;
-}
-
 
 .burgers {
-	color: #EEE;
+	color: #ffd519;
 	font-size: 150%;
 }
 .burgers li {
@@ -342,7 +357,6 @@
 }
 
 .burgers h1 {
-	font-family: 'burgerSlogan';
 	font-size: 300%;
 	margin-left: 7.5%;
 }
@@ -364,13 +378,13 @@
 	color: #FDA940;
 	font-size: 400%;
 	padding: 40px 0;
-	font-family: 'burgerSlogan';
+	font-family: 'titels';
 }
 
 .orderSub {
-	color: #EEE;
+	color: #ffd519;
 	font-size: 400%;
-	font-family: 'burgerSlogan';
+	font-family: 'titels';
 	padding: 0 0 30px;
 }
 
@@ -381,7 +395,7 @@
 
 .order li {
 	list-style: circle;
-	color: #EEE;
+	color: #ffd519;
 	font-size: 150%;
 }
 .foodOrder li {
@@ -462,6 +476,13 @@
 @media (min-width: 1200px) {
 	.pauls {
 		display: none;
+		background-size: 100%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.sectionbutton {
+		background-size: 120%;
 	}
 }
 
@@ -470,7 +491,7 @@
 	.sectionhead {
 		font-size: 300%;
 	}
-	.sectionsubhead {
+	.subtitels {
 		font-size: 150%;
 	}
 	.sectioncontent {
@@ -478,6 +499,7 @@
 	}
 	.sectionbutton {
 		font-size: 90%;
+		background-size: 100%;
 	}
 }
 @media (max-width: 992px) {
@@ -485,9 +507,6 @@
 		text-align: center;
 	}
 
-	.navbanner {
-		left: -15%;
-	}
 	.navbanner:after {
 		bottom: -40px;
 	}
@@ -500,7 +519,7 @@
 	.sectionhead {
 		font-size: 300%;
 	}
-	.sectionsubhead {
+	.subtitels {
 		font-size: 150%;
 	}
 	.sectioncontent {
@@ -508,15 +527,17 @@
 	}
 	.sectionbutton {
 		font-size: 200%;
+		background-size: 100%;
 	}
 }
-@media (max-width: 700px) {
+@media (max-width: 701px) {
 	.sloganhead {
 		padding: 50px 0 50px;
 	}
+
     p {
-        margin-left: 10px;
-        margin-right:10px;
+        margin-left: 2px;
+        margin-right:2px;
     }
 	.header {
 		background-size: cover;
@@ -525,7 +546,7 @@
 	.sectionhead {
 		font-size: 300%;
 	}
-	.sectionsubhead {
+	.subtitels {
 		font-size: 150%;
 	}
 	.sectioncontent {
@@ -534,7 +555,7 @@
 	.sectionbutton {
 		font-size: 200%;
 		margin-top: -50px;
-		background-size: 120%;
+		background-size: 100%;
 	}
 
     #limespic {
@@ -545,12 +566,15 @@
     #wasabipic {
         top: 50%;
         right: 5%;
+				bottom: 0;
         height: 30%;
 
     }
 
     #mustardEvents {
         height: 20%;
+				right: -2%;
+				position: absolute;
     }
     #basilEvents {
         position: absolute;
@@ -560,26 +584,25 @@
     #basilpic {
         height: 40%;
         bottom: 0;
+				right: 10%;
     }
 
     #tomatopic {
-        height: 15%;
+        height: 45%;
         top: 0px;
     }
 
     #tomatopicTwo {
-        height: 20%;
+        height: 50%;
     }
 
     .myoimages {
         text-align: center
     }
     .myoimages img {
-        height: 100px;
+        height: 1vh;
     }
 }
-
-
 
 /* END MEDIA */
 
@@ -591,7 +614,7 @@
     src: url('../fonts/Everglow.otf');
 }
 @font-face {
-    font-family: burgerSlogan;
+    font-family: titels;
     src: url('../fonts/distress.otf');
 }
 @font-face {
