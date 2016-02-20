@@ -1,0 +1,607 @@
+/* NAVIGATION */
+
+
+
+.icon-bar {
+	color: black;
+	border: 1px solid black !important;
+}
+
+.navbanner {
+  position: relative;
+  background-color:white;
+}
+
+.navbanner:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: -70px;
+  left: 15%;
+  right: 0;
+  background-size:contain;
+  background-image: url('../img/assets/navheader.png'); /*Your image here*/
+	background-repeat: no-repeat;
+
+}
+
+#myNavbar {
+background-color:white;}
+
+.navigation ul li {
+	display: inline-block;
+	font-size: 120%;
+	padding: 20px 5% 20px;
+	font-family: sectionContent;
+}
+.navigation ul {
+	margin-left: 25%;
+}
+
+
+.opening-times {
+	font-family: sectionContent;
+	font-size: 125%;
+	background-color: rgb(31, 39, 45);
+	color: rgb(109, 120, 125);
+	padding: 5px 0 5px;
+	text-align: center;
+}
+
+.spacer {
+	padding: 0 40px 0 40px;
+}
+
+/* END NAVIGATION */
+
+
+
+
+/*HEADER */
+
+.header {
+	background-image: url('../img/burger01.jpg');
+	background-size: cover;
+	background-position: center;
+    background-attachment: local;
+	background-repeat: no-repeat;
+	min-height: 900px;
+
+}
+.sloganhead {
+	font-size: 900%;
+	line-height: 95px;
+	color: white;
+	padding-top: 300px;
+	float: right;
+}
+
+.weTake {
+	font-family: 'weTake';
+	line-height: 110px;
+	font-size: 90%;
+}
+.seriously {
+	font-size: 83%;
+}
+.sloganBurger {
+	font-family: 'titels';
+	line-height: 100px;
+}
+.banner {
+	float: right;
+
+}
+
+
+
+
+/* END HEADER */
+
+/* MENU */
+
+h1 {
+	text-align: center;
+	font-size: 500%;
+	font-family: titels;
+	padding: 1.3vh;
+	color: #FFF;
+	z-index:3;
+}
+
+h2{
+	font-size: 200%;
+	text-align: center;
+	margin:-2px;
+	font-family: avenBlackOblique;
+	z-index:3;
+}
+
+p{
+
+	padding: 50px 0 50px;
+	text-align: center;
+	color:white;
+	font-size: 125%;
+	font-family: sectionContent;
+	z-index:3;
+}
+
+
+.sectionbutton {
+	background-image: url('../img/assets/PNGs/button.png');
+	text-align: center;
+	font-size: 3.5em;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 8vh 0;
+	color: #EEE;
+}
+
+/* MENU */
+
+
+.menu {
+background: linear-gradient(to bottom, rgba(27,150,188,0.85), rgba(27,150,188,0.85)), url('../img/rough-beige-paper-texture.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+padding: 20px 0 20px;
+position: relative;
+
+}
+
+.menu a{
+	color: #ffd723;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+.menu a:hover {
+	color: #ffe261;
+	font-family: 'titels';
+}
+
+#basilpic {
+	position: absolute;
+	padding-top: 25%;
+	z-index:2;	
+}
+
+#eggpic {
+	position: absolute;
+	top: -10px;
+	right: 0px;
+	float: right;
+	z-index:2;
+}
+
+#limespic {
+	position: absolute;
+	bottom: 0;
+	z-index:2;	
+}
+
+#wasabipic {
+	position: absolute;
+	top: 45%;
+	right: 20%;
+	z-index:2;	
+}
+
+#basilEvents {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index:2;	
+}
+
+#mustardEvents {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	z-index:2;	
+}
+/* MAKE YOUR OWN */
+
+.makeyourown {
+background: linear-gradient(to bottom, rgba(213, 0, 62, 0.75), rgba(213, 0, 62, 0.75)), url('../img/rough-beige-paper-texture.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+padding: 20px 0 20px;
+position: relative;
+}
+
+.makeyourown .sectionbutton {
+	left: 25%;
+}
+
+.makeyourown a {
+	color: #28c2ff;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+.makeyourown a:hover {
+	color: #58d0ff;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+.myoimages img {
+	padding: 1vh 5vh;
+	margin: 2vh;
+}
+
+#tomatopic {
+	position: absolute;
+	right: 0px;
+	top: -100px;
+	overflow: hidden;
+	height: 40%;
+	z-index:2;
+
+}
+#tomatopicTwo {
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+	overflow: hidden;
+	height: 30%;
+	z-index:2;	
+}
+
+/* END MYO */
+
+/* EVENTS */
+
+.events {
+background: linear-gradient(to bottom, rgba(230, 150, 43, 0.85), rgba(230, 150, 43, 0.85)), url('../img/rough-beige-paper-texture.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+padding: 20px 0 20px;
+}
+
+.events .sectionbutton {
+	left: 25%;
+}
+
+.events a {
+	color: #ec0048;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+.events a:hover {
+	color: #ff135b;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+
+
+/* END EVENTS */
+
+/* CONTACT */
+
+.contact {
+    background: linear-gradient(to bottom, rgba(35, 35, 35, 0.85), rgba(35, 35, 35, 0.85)), url('../img/rough-beige-paper-texture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: rgba(59, 59, 59, 0.75);
+	position: relative;
+	padding: 20px 0;
+	color: white;
+}
+.contact .sectionbutton {
+	left: 25%;
+}
+
+.contact a {
+	color: #88c136;
+	font-family: 'titels';
+	text-decoration:none;
+}
+
+.contact a:hover{
+	color: #96d53a;
+	font-family: 'titels';
+}
+
+/* END CONTACT */
+
+
+/* MENU PAGE */
+
+.menu-body {
+	background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.9)), url('../img/rough-beige-paper-texture.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.menu-padding {
+	padding-bottom: 100px;
+}
+
+.menu-header {
+	background-image: url('../img/ingredients01.jpg');
+    background-size: cover;
+    height: 650px;
+    background-repeat: no-repeat;
+}
+
+.burgers {
+	color: #ffd519;
+	font-size: 150%;
+}
+.burgers li {
+	list-style: none;
+}
+
+.burgers h1 {
+	font-size: 300%;
+	margin-left: 7.5%;
+}
+
+#currency {
+	float: right;
+}
+
+/* ORDER */
+
+.order {
+	background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.9)), url('../img/rough-beige-paper-texture.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.jouwSmaak {
+	color: #FDA940;
+	font-size: 400%;
+	padding: 40px 0;
+	font-family: 'titels';
+}
+
+.orderSub {
+	color: #ffd519;
+	font-size: 400%;
+	font-family: 'titels';
+	padding: 0 0 30px;
+}
+
+.orderFood {
+	height: 100px;
+	display: inline;
+}
+
+.order li {
+	list-style: circle;
+	color: #ffd519;
+	font-size: 150%;
+}
+.foodOrder li {
+  list-style: circle;
+}
+.selected {
+  list-style: disc !important;
+}
+.order .sectionbutton {
+	left: 25%;
+	background-size: 60%;
+	color: #89BF41;
+	font-size: 450%;
+}
+
+/* BUNS */
+
+.buns {
+	padding: 20px 0 50px;
+}
+
+.bunRadio {
+	cursor: pointer;
+}
+
+.buns img {
+	max-height: 17.5%;
+}
+
+/* END BUNS */
+
+/* MEAT */
+.meat {
+	padding: 20px 0 50px;
+}
+
+.meat img {
+	max-height: 17.5%;
+}
+
+/* END MEAT*/
+
+/* CHEESE */
+
+.cheese {
+	padding: 20px 0 50px;
+}
+
+.cheese img {
+	max-height: 17.5%;
+}
+
+/* END CHEESE */
+
+/* EXTRAS */
+
+.extras {
+	padding: 20px 0 100px;
+}
+
+.extras img {
+	max-height: 17.5%;
+}
+
+/* END EXTRAS */
+
+/* END ORDER */
+
+.pauls {
+	font-size: 200%;
+	font-family: 'weTake';
+	margin-left: 45%;
+	margin-top: 1%;
+}
+
+/* MEDIA */
+
+@media (min-width: 1200px) {
+	.pauls {
+		display: none;
+	}
+}
+
+@media (max-width: 782px) {
+
+	.sectionhead {
+		font-size: 300%;
+	}
+	.subtitels {
+		font-size: 150%;
+	}
+	.sectioncontent {
+		font-size: 125%;
+	}
+	.sectionbutton {
+		font-size: 90%;
+	}
+}
+@media (max-width: 992px) {
+	.sloganhead {
+		text-align: center;
+	}
+
+	.navbanner:after {
+		bottom: -40px;
+	}
+	.opening-times {
+		font-size: 100%;
+	}
+	.banner {
+		text-align: center;
+	}
+	.sectionhead {
+		font-size: 300%;
+	}
+	.subtitels {
+		font-size: 150%;
+	}
+	.sectioncontent {
+		font-size: 125%;
+	}
+	.sectionbutton {
+		font-size: 200%;
+	}
+}
+@media (max-width: 700px) {
+	.sloganhead {
+		padding: 50px 0 50px;
+	}
+	
+    p {
+        margin-left: 2px;
+        margin-right:2px;
+    }
+	.header {
+		background-size: cover;
+		min-height: 600px;
+	}
+	.sectionhead {
+		font-size: 300%;
+	}
+	.subtitels {
+		font-size: 150%;
+	}
+	.sectioncontent {
+		font-size: 125%;
+	}
+	.sectionbutton {
+		font-size: 200%;
+		margin-top: -50px;
+		background-size: 120%;
+	}
+
+    #limespic {
+        height: 30%;
+        top: 10%;
+
+    }
+    #wasabipic {
+        top: 50%;
+        right: 5%;
+        height: 30%;
+
+    }
+
+    #mustardEvents {
+        height: 20%;
+    }
+    #basilEvents {
+        position: absolute;
+        top: 0px;
+    }
+
+    #basilpic {
+        height: 40%;
+        bottom: 0;
+    }
+
+    #tomatopic {
+        height: 15%;
+        top: 0px;
+    }
+
+    #tomatopicTwo {
+        height: 20%;
+    }
+
+    .myoimages {
+        text-align: center
+    }
+    .myoimages img {
+        height: 1vh;
+    }
+}
+
+/* END MEDIA */
+
+/* FONTS */
+
+
+@font-face {
+    font-family: weTake;
+    src: url('../fonts/Everglow.otf');
+}
+@font-face {
+    font-family: titels;
+    src: url('../fonts/distress.otf');
+}
+@font-face {
+    font-family: avenBlack;
+    src: url('../fonts/avenir/AvenirLTStd-Black.otf');
+}
+@font-face {
+    font-family: avenBlackOblique;
+    src: url('../fonts/avenir/AvenirLTStd-BlackOblique.otf');
+}
+@font-face {
+    font-family: sectionContent;
+    src: url('../fonts/avenir/AvenirLTStd-Medium.otf');
+}
+@font-face {
+    font-family: sectionButton;
+    src: url('../fonts/distress.otf');
+}
+
+
+/* END FONTS
