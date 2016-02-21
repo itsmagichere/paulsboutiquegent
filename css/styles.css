@@ -1,12 +1,14 @@
 /* NAVIGATION */
 
 
-
 .icon-bar {
 	color: black;
 	border: 1px solid black !important;
 }
 
+.navbar-toggle {
+	float: left;
+}
 .navbanner {
   position: relative;
   background-color:white;
@@ -16,17 +18,20 @@
   content: " ";
   position: absolute;
   top: 0;
-  bottom: -70px;
+  bottom: -50px;
   left: 15%;
   right: 0;
   background-size:contain;
   background-image: url('../img/assets/navheader.png'); /*Your image here*/
 	background-repeat: no-repeat;
+	z-index: 8;
 
 }
 
 #myNavbar {
-background-color:white;}
+position: relative;
+z-index: 9;
+}
 
 .navigation ul li {
 	display: inline-block;
@@ -35,7 +40,16 @@ background-color:white;}
 	font-family: sectionContent;
 }
 .navigation ul {
-	margin-left: 25%;
+	margin-left: 24%;
+}
+
+.navigation a {
+	color: black;
+}
+
+.navbar-header {
+	position: relative;
+	z-index: 9;
 }
 
 
@@ -72,7 +86,7 @@ background-color:white;}
 	font-size: 900%;
 	line-height: 95px;
 	color: white;
-	padding-top: 300px;
+	padding-top: 200px;
 	float: right;
 }
 
@@ -100,7 +114,8 @@ background-color:white;}
 
 /* MENU */
 
-h1 {
+.sectionhead {
+	position: relative;
 	text-align: center;
 	font-size: 500%;
 	font-family: titels;
@@ -109,7 +124,8 @@ h1 {
 	z-index:3;
 }
 
-h2{
+.sectionsubhead {
+	position: relative;
 	font-size: 200%;
 	text-align: center;
 	margin:-2px;
@@ -117,8 +133,8 @@ h2{
 	z-index:3;
 }
 
-p{
-
+.sectioncontent {
+	position: relative;
 	padding: 50px 0 50px;
 	text-align: center;
 	color:white;
@@ -136,7 +152,9 @@ p{
 	background-position: center;
 	padding: 8vh 0;
 	color: #EEE;
+	background-size: 100%;
 	position: relative;
+	z-index: 10;
 }
 
 /* MENU */
@@ -216,12 +234,12 @@ position: relative;
 background: linear-gradient(to bottom, rgba(213, 0, 62, 0.75), rgba(213, 0, 62, 0.75)), url('../img/rough-beige-paper-texture.jpg');
 background-repeat: no-repeat;
 background-size: cover;
-padding: 20px 0 20px;
 position: relative;
 }
 
 .makeyourown .sectionbutton {
 	left: 25%;
+	margin-right: 0 !important;
 }
 
 .makeyourown a {
@@ -246,7 +264,6 @@ position: relative;
 
 .myoimages img {
 	padding: 1vh 5vh;
-	margin: 2vh;
 }
 
 #tomatopic {
@@ -467,7 +484,7 @@ padding: 20px 0 20px;
 .pauls {
 	font-size: 200%;
 	font-family: 'weTake';
-	margin-left: 45%;
+	margin-left: 36%;
 	margin-top: 1%;
 }
 
@@ -476,13 +493,18 @@ padding: 20px 0 20px;
 @media (min-width: 1200px) {
 	.pauls {
 		display: none;
-		background-size: 100%;
 	}
 }
 
 @media (max-width: 1200px) {
 	.sectionbutton {
 		background-size: 120%;
+	}
+	.myoimages {
+		display: none;
+	}
+	.navbanner:after {
+		display: none;
 	}
 }
 
@@ -555,7 +577,7 @@ padding: 20px 0 20px;
 	.sectionbutton {
 		font-size: 200%;
 		margin-top: -50px;
-		background-size: 100%;
+		background-size: 120%;
 	}
 
     #limespic {
