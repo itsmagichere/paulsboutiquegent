@@ -1,0 +1,23 @@
+.scrollToTop{
+    width:100px;
+    height:50px;
+    padding:10px;
+    color: white !important;
+    text-align:center;
+    background: whiteSmoke;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    position:fixed;
+    bottom:75px;
+    z-index: 1000;
+    right:40px;
+    display:none;
+    background-color: #337ab7;
+    border: 1px solid blue;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+    background-color: #115895;
+    color: #DDD;
+}

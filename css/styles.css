@@ -161,7 +161,7 @@ z-index: 9;
 
 
 .menu {
-background: linear-gradient(to bottom, rgba(27,150,188,0.85), rgba(27,150,188,0.85)), url('../img/rough-beige-paper-texture.jpg');
+background: linear-gradient(to bottom, rgba(27,150,188,0.6), rgba(27,150,188,0.6)), url('../img/rough-beige-paper-texture.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 padding: 20px 0 20px;
@@ -231,7 +231,7 @@ position: relative;
 /* MAKE YOUR OWN */
 
 .makeyourown {
-background: linear-gradient(to bottom, rgba(213, 0, 62, 0.75), rgba(213, 0, 62, 0.75)), url('../img/rough-beige-paper-texture.jpg');
+background: linear-gradient(to bottom, rgba(213, 0, 62, 0.6), rgba(213, 0, 62, 0.6)), url('../img/rough-beige-paper-texture.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
@@ -289,7 +289,7 @@ position: relative;
 /* EVENTS */
 
 .events {
-background: linear-gradient(to bottom, rgba(230, 150, 43, 0.85), rgba(230, 150, 43, 0.85)), url('../img/rough-beige-paper-texture.jpg');
+background: linear-gradient(to bottom, rgba(230, 150, 43, 0.6), rgba(230, 150, 43, 0.6)), url('../img/rough-beige-paper-texture.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
@@ -320,7 +320,7 @@ padding: 20px 0 20px;
 /* CONTACT */
 
 .contact {
-    background: linear-gradient(to bottom, rgba(35, 35, 35, 0.85), rgba(35, 35, 35, 0.85)), url('../img/rough-beige-paper-texture.jpg');
+    background: linear-gradient(to bottom, rgba(35, 35, 35, 0.6), rgba(35, 35, 35, 0.6)), url('../img/rough-beige-paper-texture.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 	background-color: rgba(59, 59, 59, 0.75);
@@ -349,7 +349,7 @@ padding: 20px 0 20px;
 /* MENU PAGE */
 
 .menu-body {
-	background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.9)), url('../img/rough-beige-paper-texture.jpg');
+	background: linear-gradient(to bottom, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url('../img/rough-beige-paper-texture.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -391,6 +391,14 @@ padding: 20px 0 20px;
 	text-align: center;
 }
 
+
+.food {
+	color: white;
+	font-family: 'sectioncontent';
+	font-size: 20px;
+	vertical-align: top;
+	padding-left: 5%;
+}
 .jouwSmaak {
 	color: #FDA940;
 	font-size: 400%;
@@ -434,7 +442,7 @@ padding: 20px 0 20px;
 	padding: 20px 0 50px;
 }
 
-.bunRadio {
+.radio {
 	cursor: pointer;
 }
 
@@ -450,7 +458,7 @@ padding: 20px 0 20px;
 }
 
 .meat img {
-	max-height: 17.5%;
+	max-height: 250px;
 }
 
 /* END MEAT*/
@@ -462,7 +470,7 @@ padding: 20px 0 20px;
 }
 
 .cheese img {
-	max-height: 17.5%;
+	max-height: 220px;
 }
 
 /* END CHEESE */
@@ -473,8 +481,8 @@ padding: 20px 0 20px;
 	padding: 20px 0 100px;
 }
 
-.extras img {
-	max-height: 17.5%;
+.extras .radio img {
+	max-height: 220px;
 }
 
 /* END EXTRAS */
@@ -595,7 +603,7 @@ padding: 20px 0 20px;
 
     #mustardEvents {
         height: 20%;
-				right: -2%;
+				right: 2%;
 				position: absolute;
     }
     #basilEvents {
