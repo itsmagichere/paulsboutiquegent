@@ -24,13 +24,13 @@
   background-size:contain;
   background-image: url('../img/assets/navheader.png'); /*Your image here*/
 	background-repeat: no-repeat;
-	z-index: 8;
+	z-index: 101;
 
 }
 
 #myNavbar {
 position: relative;
-z-index: 9;
+z-index:110;
 }
 
 .navigation ul li {
@@ -38,6 +38,7 @@ z-index: 9;
 	font-size: 120%;
 	padding: 20px 5% 20px;
 	font-family: sectionContent;
+	text-align: center;
 }
 .navigation ul {
 	margin-left: 24%;
@@ -80,11 +81,13 @@ z-index: 9;
     background-attachment: local;
 	background-repeat: no-repeat;
 	min-height: 900px;
+	position: relative;
+	z-index: 100;
 
 }
 .sloganhead {
 	font-size: 900%;
-	line-height: 95px;
+	line-height: 80px;
 	color: white;
 	padding-top: 200px;
 	float: right;
@@ -106,9 +109,10 @@ z-index: 9;
 	float: right;
 
 }
-
-
-
+.banner img {
+	height: 70px;
+	margin-left: -1%;
+}
 
 /* END HEADER */
 
@@ -166,6 +170,7 @@ background-repeat: no-repeat;
 background-size: cover;
 padding: 20px 0 20px;
 position: relative;
+z-index: 3;
 
 }
 
@@ -187,46 +192,91 @@ position: relative;
 }
 
 #basilpic {
+	overflow: hidden;
 	position: absolute;
-	padding-top: 25%;
-	z-index:2;
-	right: 10%;
+	z-index: 2;
 }
 
-#eggpic {
+.basilBox {
+	height: 213px;
+	width: 300px;
+	left: -100px;
+	bottom: -80px;
 	position: absolute;
-	top: -10px;
-	right: 0px;
-	float: right;
-	z-index:2;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+#eggpic {
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+	height: 30%;
+}
+.eggBox {
+	height: 100%;
+	width: 200px;
+	top: -20px;
+	right: 0;
+	position: absolute;
+	overflow: hidden;
+
+
 }
 
 #limespic {
 	position: absolute;
-	bottom: 0;
+	overflow: hidden;
 	z-index:2;
+}
+.limesBox {
+	height: 50%;
+	width: 200px;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	overflow: hidden;
 }
 
 #wasabipic {
 	position: absolute;
-	top: 35%;
-	right: 20%;
-	bottom: 0;
 	z-index:2;
+	height: 60%;
+}
+.wasabiBox {
+	height: 80%;
+	width: 400px;
+	top: -80px;
+	left: -7%;
+	position: absolute;
+	overflow: hidden;
 }
 
 #basilEvents {
 	position: absolute;
-	bottom: 0;
-	left: 0;
 	z-index:2;
+}
+.basilEventsBox {
+	height: 220px;
+	width: 300px;
+	top: 0;
+	left: -150px;
+	position: absolute;
+	overflow: hidden;
 }
 
 #mustardEvents {
 	position: absolute;
-	right: 5%;
-	bottom: 5%;
 	z-index:2;
+}
+.mustardBox {
+	height: 60%;
+	width: 200px;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	overflow: hidden;
 }
 /* MAKE YOUR OWN */
 
@@ -235,6 +285,7 @@ background: linear-gradient(to bottom, rgba(213, 0, 62, 0.6), rgba(213, 0, 62, 0
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
+z-index: 4;
 }
 
 .makeyourown .sectionbutton {
@@ -268,20 +319,31 @@ position: relative;
 
 #tomatopic {
 	position: absolute;
-	right: 0px;
-	top: -100px;
 	overflow: hidden;
+	z-index:1;
+}
+.tomatoBox {
 	height: 40%;
-	z-index:2;
-
+	width: 400px;
+	bottom: 0px;
+	left: -100px;
+	position: absolute;
+	overflow: hidden;
 }
 #tomatopicTwo {
 	position: absolute;
-	bottom: 0;
-	left: 5%;
 	overflow: hidden;
-	height: 30%;
-	z-index:2;
+	z-index: 1;
+	height: 40%;
+}
+.tomatoTwoBox {
+	height: 563px;
+	width: 360px;
+	top: 0;
+	float: right;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
 }
 
 /* END MYO */
@@ -294,6 +356,7 @@ background-repeat: no-repeat;
 background-size: cover;
 position: relative;
 padding: 20px 0 20px;
+z-index: 10;
 }
 
 .events .sectionbutton {
@@ -327,6 +390,7 @@ padding: 20px 0 20px;
 	position: relative;
 	padding: 20px 0;
 	color: white;
+	z-index: 4;
 }
 .contact .sectionbutton {
 	left: 25%;
@@ -348,25 +412,36 @@ padding: 20px 0 20px;
 
 /* MENU PAGE */
 
-.menu-body {
-	background: linear-gradient(to bottom, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url('../img/rough-beige-paper-texture.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+.menu-head h1{
+	text-align: center;
+	color: white;
+	font-size: 550% !important;
+	font-family: titels;
+	margin: 0;
+	padding: 40px 0 20px;
 }
 
-.menu-padding {
-	padding-bottom: 100px;
+.menu-body {
+	background: linear-gradient(to bottom, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8)), url('../img/rough-beige-paper-texture.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 7;
 }
+
 
 .menu-header {
 	background-image: url('../img/ingredients01.jpg');
     background-size: cover;
     height: 650px;
     background-repeat: no-repeat;
+		position: relative;
+		z-index: 100;
 }
 
 .burgers {
-	color: #ffd519;
+	color: white;
+	/*color: #ffd519;*/
 	font-size: 150%;
 }
 .burgers li {
@@ -374,12 +449,73 @@ padding: 20px 0 20px;
 }
 
 .burgers h1 {
+	margin: 50px 0 40px;
 	font-size: 300%;
 	margin-left: 7.5%;
+	font-family: titels;
+}
+
+#menuEggPic {
+	position: absolute;
+	overflow: hidden;
+	z-index:6;
+	height: 40%;
+}
+
+.menuEggBox {
+	height: 70%;
+	width: 400px;
+	top: -100px;
+	right: -100px;
+	position: absolute;
+	overflow: hidden;
+}
+
+#menuBasilPic {
+	overflow: hidden;
+	position: absolute;
+	z-index: 1000;
+	height: 80%;
+}
+
+.menuBasilBox {
+	height: 40%;
+	width: 800px;
+	top: -100px;
+	left: -250px;
+	position: absolute;
+	overflow: hidden;
 }
 
 #currency {
 	float: right;
+}
+#menuLimesPic {
+	position: absolute;
+	overflow: hidden;
+	z-index:2;
+}
+.menuLimesBox {
+	height: 50%;
+	width: 200px;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	overflow: hidden;
+}
+
+#menuWasabiPic {
+	position: absolute;
+	z-index:2;
+	height: 60%;
+}
+.menuWasabiBox {
+	height: 80%;
+	width: 400px;
+	top: -80px;
+	left: -7%;
+	position: absolute;
+	overflow: hidden;
 }
 
 /* ORDER */
@@ -485,6 +621,7 @@ padding: 20px 0 20px;
 	max-height: 220px;
 }
 
+
 /* END EXTRAS */
 
 /* END ORDER */
@@ -492,7 +629,7 @@ padding: 20px 0 20px;
 .pauls {
 	font-size: 200%;
 	font-family: 'weTake';
-	margin-left: 36%;
+	text-align: center;
 	margin-top: 1%;
 }
 
@@ -514,8 +651,17 @@ padding: 20px 0 20px;
 	.navbanner:after {
 		display: none;
 	}
+	.navigation ul li {
+		font-size: 100%;
+	}
 }
 
+@media (max-width: 782px) {
+	.navigation ul li {
+		text-align: center;
+		margin-right: 40%;
+	}
+}
 @media (max-width: 782px) {
 
 	.sectionhead {
@@ -560,7 +706,25 @@ padding: 20px 0 20px;
 		background-size: 100%;
 	}
 }
+
+@media (max-width: 500px) {
+	.sloganhead {
+		font-size: 600% !important;
+	}
+	.pauls {
+		margin-right: 12.5% !important;
+	}
+
+}
+@media (min-width: 701px) {
+	.banner {
+		margin-right: -2.5%;
+	}
+}
 @media (max-width: 701px) {
+	.banner {
+		margin-top: -40px;
+	}
 	.sloganhead {
 		padding: 50px 0 50px;
 	}
@@ -587,45 +751,6 @@ padding: 20px 0 20px;
 		margin-top: -50px;
 		background-size: 120%;
 	}
-
-    #limespic {
-        height: 30%;
-        top: 10%;
-
-    }
-    #wasabipic {
-        top: 50%;
-        right: 5%;
-				bottom: 0;
-        height: 30%;
-
-    }
-
-    #mustardEvents {
-        height: 20%;
-				right: 2%;
-				position: absolute;
-    }
-    #basilEvents {
-        position: absolute;
-        top: 0px;
-    }
-
-    #basilpic {
-        height: 40%;
-        bottom: 0;
-				right: 10%;
-    }
-
-    #tomatopic {
-        height: 45%;
-        top: 0px;
-    }
-
-    #tomatopicTwo {
-        height: 50%;
-    }
-
     .myoimages {
         text-align: center
     }
@@ -633,6 +758,8 @@ padding: 20px 0 20px;
         height: 1vh;
     }
 }
+
+
 
 /* END MEDIA */
 
